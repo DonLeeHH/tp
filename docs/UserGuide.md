@@ -372,7 +372,7 @@ Record a session for a class.
 **Format:**
 
 ```
-addsession c/CLASS_NAME s/SESSION_NAME dt/DATETIME [l/LOCATION]
+addsession c/CLASS_NAME s/SESSION_NAME dt/DATETIME [lo/LOCATION]
 ```
 
 * The class must already exist
@@ -381,7 +381,7 @@ addsession c/CLASS_NAME s/SESSION_NAME dt/DATETIME [l/LOCATION]
 * Session names must be unique within a class
 
 **Example:**
-`addsession c/Math101 s/Week 3 Tutorial dt/2024-03-15 14:30 l/COM1-B103`
+`addsession c/Math101 s/Week 3 Tutorial dt/2024-03-15 14:30 lo/COM1-B103`
 
 ---
 
@@ -499,7 +499,7 @@ Action | Format, Examples
 --------|------------------
 **Add** | `add n/NAME p/PHONE e/EMAIL a/ADDRESS ro/PERSON_TYPE [t/TAG]…​` <br> e.g., `add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 ro/student`
 **Add Class** | `addclass c/CLASS_NAME [tu/TUTOR_NAME]` <br> e.g., `addclass c/Sec2-Math-A tu/Ms Lim`
-**Add Session** | `addsession c/CLASS_NAME s/SESSION_NAME dt/DATETIME [l/LOCATION]` <br> e.g., `addsession c/Math101 s/Week 3 Tutorial dt/2024-03-15 14:30 l/COM1-B103`
+**Add Session** | `addsession c/CLASS_NAME s/SESSION_NAME dt/DATETIME [lo/LOCATION]` <br> e.g., `addsession c/Math101 s/Week 3 Tutorial dt/2024-03-15 14:30 lo/COM1-B103`
 **Attend** | `attend n/NAME c/CLASS_NAME s/SESSION_NAME st/STATUS` <br> e.g., `attend n/John Doe c/Math101 s/Week 3 Tutorial st/PRESENT`
 **Children** | `childrenof n/PARENT_NAME` <br> e.g., `childrenof n/John Doe`
 **Clear** | `clear`
