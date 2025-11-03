@@ -274,7 +274,7 @@ Create a new tuition class and add to the address book.
 **Format:**
 
 ```
-addclass c/CLASS_NAME [tu/TUTOR_NAME]
+addclass c/CLASS_NAME [tutor/TUTOR_NAME]
 ```
 
 * `CLASS_NAME` can contain spaces
@@ -283,7 +283,7 @@ addclass c/CLASS_NAME [tu/TUTOR_NAME]
 **Examples:**
 
 * `addclass c/Sec2-Math-A`
-* `addclass c/CS2101 tu/Alex Yeoh`
+* `addclass c/CS2101 tutor/Alex Yeoh`
 
 ![add class command](images/addClassCommand.png)
 
@@ -373,7 +373,7 @@ Record a session for a class.
 **Format:**
 
 ```
-addsession c/CLASS_NAME s/SESSION_NAME dt/DATETIME [l/LOCATION]
+addsession c/CLASS_NAME s/SESSION_NAME dt/DATETIME [lo/LOCATION]
 ```
 
 * The class must already exist
@@ -382,7 +382,7 @@ addsession c/CLASS_NAME s/SESSION_NAME dt/DATETIME [l/LOCATION]
 * Session names must be unique within a class
 
 **Example:**
-`addsession c/Math101 s/Week 3 Tutorial dt/2024-03-15 14:30 l/COM1-B103`
+`addsession c/Math101 s/Week 3 Tutorial dt/2024-03-15 14:30 lo/COM1-B103`
 
 ---
 
@@ -499,8 +499,8 @@ Furthermore, certain edits can cause the TutBook to behave in unexpected ways (e
 Action | Format, Examples
 --------|------------------
 **Add** | `add n/NAME p/PHONE e/EMAIL a/ADDRESS ro/PERSON_TYPE [t/TAG]…​` <br> e.g., `add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 ro/student`
-**Add Class** | `addclass c/CLASS_NAME [tu/TUTOR_NAME]` <br> e.g., `addclass c/Sec2-Math-A tu/Ms Lim`
-**Add Session** | `addsession c/CLASS_NAME s/SESSION_NAME dt/DATETIME [l/LOCATION]` <br> e.g., `addsession c/Math101 s/Week 3 Tutorial dt/2024-03-15 14:30 l/COM1-B103`
+**Add Class** | `addclass c/CLASS_NAME [tutor/TUTOR_NAME]` <br> e.g., `addclass c/Sec2-Math-A tutor/Ms Lim`
+**Add Session** | `addsession c/CLASS_NAME s/SESSION_NAME dt/DATETIME [lo/LOCATION]` <br> e.g., `addsession c/Math101 s/Week 3 Tutorial dt/2024-03-15 14:30 lo/COM1-B103`
 **Attend** | `attend n/NAME c/CLASS_NAME s/SESSION_NAME status/STATUS` <br> e.g., `attend n/John Doe c/Math101 s/Week 3 Tutorial status/PRESENT`
 **Children** | `childrenof n/PARENT_NAME` <br> e.g., `childrenof n/John Doe`
 **Clear** | `clear`
